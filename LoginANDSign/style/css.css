@@ -120,31 +120,24 @@
 }
 .form-group .eye{
 position: absolute;
-top: 50%;
-font-size: 20px;
-left: 90%;
-z-index: 5;
+top: 41px;
+    font-size: 20px;
+    left: 88%;
 cursor: pointer;
 transform: translate(-50%, -50%);
 }
+.form-group .eye1{
+    position: absolute;
+    top: 41px;
+    font-size: 20px;
+    left: 88%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    }
 .forget:hover{
     text-decoration: underline;
 }
-/* #mail, #password {
-    display: none;
-  } */
-/* .panel-signup,.panel-forgot{
-    transform: translateX(-100%);
-    transition: all 0.4s ease-in-out;
-}
-.panel-login.active,
-.panel-signup.active,
-.panel-forgot.active {
-    display: flex;
 
-    transform: translate(0%);
-    transition: all 0.4s ease-in-out;
-} */
 .remember-row{
     display: flex;
     justify-content: space-between;

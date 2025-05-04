@@ -50,13 +50,13 @@
                     <form name="loginForm" class="loginForm form" >
                       <div class="form-group">
                         <input type="email" class="form-control email" name="username" id="Email" placeholder="Email address">
-                        <!-- <p class="text-start text-danger" id="mail" >Please Enter Correct Email</p> -->
+                        <p class="text-start text-danger" id="errorBox" ></p>
                       </div>
                       <div class="form-group">
                         <div class="index-box">
                         <input type="password" class="form-control password" id="pass" name="password" placeholder="Password">
                         <i class="bi bi-eye-slash-fill eye" id="eye"></i>
-                        <!-- <p class="text-start text-danger"id="password">Please Enter Correct Password</p> -->
+                        <p class="text-start text-danger" id="errorBoxs"></p>
                         </div>
                       </div>
                       <div class="row remember-row">
@@ -70,7 +70,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <button class="btn btn-lg btn-primary btn-block "id="SignIN" type="submit">Login with email</button>
+                        <button class="btn btn-lg btn-primary btn-block "id="LoginForm" type="button">Login with email</button>
                       </div>
                     </form>
                   </div>
@@ -82,24 +82,31 @@
                     <div class="authfy-heading">
                       <h3 class="auth-title">Sign up for free!</h3>
                     </div>
-                    <form name="signupForm" class="signupForm" onsubmit="emailSend();reset(); return false;" >
+                    <form name="signupForm" class="signupForm"  >
                       <div class="form-group">
                         <input type="text" class="form-control" id="name" name="username" placeholder="Full name">
                       </div>
+                      <p class="text-start text-danger" id="errorname"></p>
                       <div class="form-group">
-                        <input type="text" class="form-control" id="email" name="fullname" placeholder="Email address">
+                        <input type="text" class="form-control" id="id" name="id" placeholder="Enter ID">
                       </div>
+                      <p class="text-start text-danger" id="errorid"></p>
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="Email address">
+                      </div>
+                      <p class="text-start text-danger" id="erroremail"></p>
                       <div class="form-group">
                         <div class="index-box">
                           <input type="password" class="form-control" id="pass1" name="password" placeholder="Password">
                           <i class="bi bi-eye-slash-fill eye" id="eye1"></i>
                         </div>
+                        <p class="text-start text-danger" id="errorpass"></p>
                       </div>
                       <div class="form-group">
                         <p class="term-policy text-muted small">I agree to the <a href="#">privacy policy</a> and <a href="#">terms of service</a>.</p>
                       </div>
                       <div class="form-group">
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up with email</button>
+                        <button class="btn btn-lg btn-primary btn-block" id="signup" type="button" >Sign up with email</button>
                       </div>
                     </form>
                     <a class="lnk-toggler" data-panel=".panel-login" href="#">Already have an account?</a>
@@ -118,7 +125,7 @@
                         <input type="email" class="form-control" name="username" placeholder="Email address">
                       </div>
                       <div class="form-group">
-                        <button class="btn btn-lg btn-primary btn-block" type="submit">Recover your password</button>
+                        <button class="btn btn-lg btn-primary btn-block">Recover your password</button>
                       </div>
                       <div class="form-group">
                         <button class="lnk-toggler account" id="Alerady" data-panel=".panel-login" >Already have an account?</button>
